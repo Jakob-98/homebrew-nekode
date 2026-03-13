@@ -1,26 +1,26 @@
-# Casks/cctop.rb
-# This formula is for the homebrew-cctop tap (github.com/st0012/homebrew-cctop)
-# Copy this file to Casks/cctop.rb in that repo.
+# Casks/nekode.rb
+# This formula is for the homebrew-nekode tap (github.com/Jakob-98/homebrew-nekode)
+# Copy this file to Casks/nekode.rb in that repo.
 #
 # Usage:
-#   brew tap st0012/cctop
-#   brew install --cask cctop
+#   brew tap Jakob-98/nekode
+#   brew install --cask nekode
 #
-cask "cctop" do
-  version "0.7.2"
+cask "nekode" do
+  version "0.9.1"
 
   on_arm do
-    url "https://github.com/st0012/cctop/releases/download/v#{version}/cctop-macOS-arm64.zip"
-    sha256 "REPLACE_WITH_ARM64_SHA256"
+    url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-arm64.zip"
+    sha256 "7dbc5080fe46dfbd52ed498c1eca7abcf5c3a90c2bf05e7b7873fead1825ac34"
   end
   on_intel do
-    url "https://github.com/st0012/cctop/releases/download/v#{version}/cctop-macOS-x86_64.zip"
-    sha256 "REPLACE_WITH_X86_64_SHA256"
+    url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-x86_64.zip"
+    sha256 "befb482234d072559dc6db24bd56a42ac50ec29ad1ac1e346d1b9c2dad946311"
   end
 
-  name "cctop"
+  name "Nekode"
   desc "Monitor AI coding sessions from the macOS menu bar"
-  homepage "https://github.com/st0012/cctop"
+  homepage "https://nekode.dev"
 
   livecheck do
     url :url
@@ -30,11 +30,10 @@ cask "cctop" do
   auto_updates true
   depends_on macos: ">= :ventura"
 
-  app "cctop.app"
-  binary "#{appdir}/cctop.app/Contents/MacOS/cctop-hook"
-
+  app "Nekode.app"
+  binary "#{appdir}/Nekode.app/Contents/MacOS/nekode"
 
   zap trash: [
-    "~/.cctop",
+    "~/.nekode",
   ]
 end
