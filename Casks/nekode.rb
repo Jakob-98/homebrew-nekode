@@ -11,11 +11,11 @@ cask "nekode" do
 
   on_arm do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-arm64.zip"
-    sha256 "f77df0dca40e0cb40315486da3507337cd131ddf4f2ea96c8e099a7ae2ef49ee"
+    sha256 "adc2d76167d4829b930c09654ae80d7e0fca6826e9c6308c7b1b435c7776f579"
   end
   on_intel do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-x86_64.zip"
-    sha256 "b63961aacba75eeac3498154f88f636c08f92cce8e8c73808c1bdbfc65590a9c"
+    sha256 "8bf522cc9d51a135e4e3b7fa6520412a2ddc06c0a8fc2b5f5e9a8f45860dfc6e"
   end
 
   name "Nekode"
