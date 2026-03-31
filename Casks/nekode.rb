@@ -1,21 +1,21 @@
-# Casks/nekode.rb
-# This formula is for the homebrew-nekode tap (github.com/Jakob-98/homebrew-nekode)
-# Copy this file to Casks/nekode.rb in that repo.
+# Casks/nekode.rb — template for the homebrew-nekode tap.
+# CI replaces SHA256 placeholders during release (see .github/workflows/release.yml).
+# Copy this file to Casks/nekode.rb in github.com/Jakob-98/homebrew-nekode.
 #
 # Usage:
 #   brew tap Jakob-98/nekode
 #   brew install --cask nekode
 #
 cask "nekode" do
-  version "0.9.1"
+  version "1.0.0"
 
   on_arm do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-arm64.zip"
-    sha256 "ef5d16a0a1d438bbc0bbc945386d23f7fed3912249e76facdb6e544d6b96ab2e"
+    sha256 "f77df0dca40e0cb40315486da3507337cd131ddf4f2ea96c8e099a7ae2ef49ee"
   end
   on_intel do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-x86_64.zip"
-    sha256 "0164ab2127503656814fa75cca82cb9e4a3615a47096c134006be79687ff27a8"
+    sha256 "b63961aacba75eeac3498154f88f636c08f92cce8e8c73808c1bdbfc65590a9c"
   end
 
   name "Nekode"
