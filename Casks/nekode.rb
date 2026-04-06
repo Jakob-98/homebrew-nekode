@@ -7,15 +7,15 @@
 #   brew install --cask nekode
 #
 cask "nekode" do
-  version "1.0.0"
+  version "1.0.1"
 
   on_arm do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-arm64.zip"
-    sha256 "adc2d76167d4829b930c09654ae80d7e0fca6826e9c6308c7b1b435c7776f579"
+    sha256 "ca7314b4f47d5c77138caa84287d40222d8ae765b5f525aa49e6426afe75d8d8"
   end
   on_intel do
     url "https://github.com/Jakob-98/nekode/releases/download/v#{version}/nekode-macOS-x86_64.zip"
-    sha256 "8bf522cc9d51a135e4e3b7fa6520412a2ddc06c0a8fc2b5f5e9a8f45860dfc6e"
+    sha256 "5b70f696f9e9a85df4526dab2968a6db6eeffe5a31be71cca99ef2ff3113afc0"
   end
 
   name "Nekode"
